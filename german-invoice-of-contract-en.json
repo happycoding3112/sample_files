@@ -1,0 +1,131 @@
+{
+  "name": "german_invoice_of_contract_en",
+  "fields": [
+    {
+      "fieldName": "VN Name/Address",
+      "fieldType": "text",
+      "fieldDescription": "Complete policyholder name and address details (German: VN Name/Anschrift). Must include full postal address"
+    },
+    {
+      "fieldName": "Insurer",
+      "fieldType": "text",
+      "fieldDescription": "Name of insurance company issuing the invoice (German: Versicherer). Must include full legal name"
+    },
+    {
+      "fieldName": "Policy Number",
+      "fieldType": "text",
+      "fieldDescription": "Unique insurance policy reference number (German: Policennummer). Format follows insurer's standard pattern"
+    },
+    {
+      "fieldName": "Supplement Number",
+      "fieldType": "text",
+      "fieldDescription": "Additional policy modification reference number (German: Nachtragsnummer). Used for policy amendments"
+    },
+    {
+      "fieldName": "Contract Duration",
+      "fieldType": "text",
+      "fieldDescription": "Period of insurance coverage for this invoice (German: Vertragslaufzeit). Format: DD.MM.YYYY bis DD.MM.YYYY"
+    },
+    {
+      "fieldName": "Co-policyholders",
+      "fieldType": "text",
+      "fieldDescription": "Additional parties included in insurance coverage (German: Mit-Versicherungsnehmer). Multiple names if applicable"
+    },
+    {
+      "fieldName": "Places of Insurance",
+      "fieldType": "text",
+      "fieldDescription": "Physical locations covered by insurance (German: Versicherungsorte). Complete address of insured property"
+    },
+    {
+      "fieldName": "Insured Risks",
+      "fieldType": "text",
+      "fieldDescription": "Types of insurance coverage included (German: versicherte Gefahren). List of all covered risks"
+    },
+    {
+      "fieldName": "Insured Property",
+      "fieldType": "text",
+      "fieldDescription": "Description of property covered by insurance (German: versicherte Sachen). Details of insured items/buildings"
+    },
+    {
+      "fieldName": "Period of Imprisonment",
+      "fieldType": "text",
+      "fieldDescription": "Duration of specific coverage period (German: Haftzeit). Specific timeframe for coverage validity"
+    },
+    {
+      "fieldName": "Sum Insured",
+      "fieldType": "number",
+      "fieldDescription": "Total value of insurance coverage (German: Versicherungssumme). Amount in EUR"
+    },
+    {
+      "fieldName": "Maximum Compensation",
+      "fieldType": "number",
+      "fieldDescription": "Highest possible payout amount (German: Höchstentschädigung). Maximum limit in EUR"
+    },
+    {
+      "fieldName": "Insured Costs",
+      "fieldType": "number",
+      "fieldDescription": "Additional costs included in coverage (German: versicherte Kosten). Supplementary covered expenses"
+    },
+    {
+      "fieldName": "Mode of Payment",
+      "fieldType": "text",
+      "fieldDescription": "Payment frequency and method (German: Zahlungsweise). E.g., monthly, quarterly, annually"
+    },
+    {
+      "fieldName": "Base Premium",
+      "fieldType": "number",
+      "fieldDescription": "Basic premium amount before adjustments (German: Basis). Base price in EUR"
+    },
+    {
+      "fieldName": "Sum Factor",
+      "fieldType": "number",
+      "fieldDescription": "Multiplier used for sum calculations (German: Summenfaktor). Adjustment factor"
+    },
+    {
+      "fieldName": "Premium Factor",
+      "fieldType": "number",
+      "fieldDescription": "Factor applied to premium calculations (German: Prämienfaktor). Premium adjustment multiplier"
+    },
+    {
+      "fieldName": "Building Sum",
+      "fieldType": "number",
+      "fieldDescription": "Total insured value of building (German: Bausumme). Building value in EUR"
+    },
+    {
+      "fieldName": "Mark",
+      "fieldType": "text",
+      "fieldDescription": "Special classification or identification mark (German: Kennzeichen). Additional classification"
+    },
+    {
+      "fieldName": "Deductibles_Table",
+      "fieldType": "table",
+      "fieldDescription": "Table to capture multiple deductibles for different risk types (German: Selbstbehalte)",
+      "columns": [
+        {
+          "columnName": "Risk_Type",
+          "valueType": "text",
+          "columnDescription": "Type of risk coverage (German: Risikoart)"
+        },
+        {
+          "columnName": "Amount",
+          "valueType": "number",
+          "columnDescription": "Deductible amount in EUR (German: Selbstbehalt)"
+        }
+      ]
+    }
+  ],
+  "modelDescription": "A specialized document type for processing German insurance contract invoices and billing documents (Versicherungsrechnung). This stream handles invoices and premium calculations related to insurance contracts, including building insurance, liability coverage, and associated services. The documents provide detailed breakdowns of insurance premiums, payment schedules, and coverage-related costs. The stream processes both initial invoices and recurring billing documents while maintaining references to the original insurance policy terms.",
+  "inputSettings": {
+    "language": "nl",
+    "numberFormat": "auto",
+    "dateFormat": "auto",
+    "currencyFormat": "auto",
+    "documentLayout": "auto",
+    "documentLength": "auto",
+    "sourceQuality": "auto",
+    "contentType": "auto",
+    "handwrittenText": "auto",
+    "_id": "6757c3e9a72b878637a6d6dc"
+  },
+  "outputVersion": "v2"
+}

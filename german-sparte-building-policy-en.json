@@ -1,0 +1,116 @@
+{
+  "name": "german_sparte_building_policy_en",
+  "fields": [
+    {
+      "fieldName": "VN Name / Address",
+      "fieldType": "text",
+      "fieldDescription": "Complete name and address of the policyholder (German: 'VN Name / Anschrift'). Must include full postal address with street, house number, postal code, and city. Example format: 'Name, Street House Number, Postal Code City'"
+    },
+    {
+      "fieldName": "Insurer",
+      "fieldType": "text",
+      "fieldDescription": "Name of the insurance company providing coverage (German: 'Versicherer'). Should include the complete legal name of the insurance company as registered in Germany"
+    },
+    {
+      "fieldName": "Policy Number",
+      "fieldType": "text",
+      "fieldDescription": "Unique policy identifier (German: 'Policennummer'). Typically follows insurer-specific format, e.g., 'XXX-XXXXXXX' or similar pattern"
+    },
+    {
+      "fieldName": "Supplement Number",
+      "fieldType": "text",
+      "fieldDescription": "Additional reference number for policy amendments (German: 'Nachtragsnummer'). Used when policy has been modified from its original version"
+    },
+    {
+      "fieldName": "Contract",
+      "fieldType": "text",
+      "fieldDescription": "Contract duration and validity period (German: 'Vertragslaufzeit'). Must include start and end dates in format 'DD.MM.YYYY bis DD.MM.YYYY'"
+    },
+    {
+      "fieldName": "Co-policyholders",
+      "fieldType": "text",
+      "fieldDescription": "Additional insured parties on the policy (German: 'Mit-Versicherungsnehmer'). List all additional parties who have insurance rights under this policy"
+    },
+    {
+      "fieldName": "Places of Insurance",
+      "fieldType": "text",
+      "fieldDescription": "Physical locations covered by insurance (German: 'Versicherungsorte'). Must include complete addresses of all insured properties"
+    },
+    {
+      "fieldName": "Insured Risks",
+      "fieldType": "text",
+      "fieldDescription": "Types of risks covered by policy (German: 'versicherte Gefahren'). Common types include 'Feuer' (fire), 'Wasser' (water), 'Sturm' (storm)"
+    },
+    {
+      "fieldName": "Insured Property",
+      "fieldType": "text",
+      "fieldDescription": "Detailed description of insured buildings/property (German: 'versicherte Sachen'). Should specify building type, usage, and key characteristics"
+    },
+    {
+      "fieldName": "Period of Imprisonment",
+      "fieldType": "text",
+      "fieldDescription": "Duration of liability coverage (German: 'Haftzeit'). Specifies the period for which liability protection is valid"
+    },
+    {
+      "fieldName": "Sum Insured",
+      "fieldType": "number",
+      "fieldDescription": "Total value of insurance coverage (German: 'Versicherungssumme'). The maximum amount payable for total loss, expressed in EUR"
+    },
+    {
+      "fieldName": "Insured Costs",
+      "fieldType": "number",
+      "fieldDescription": "Additional costs covered by insurance (German: 'versicherte Kosten'). Includes supplementary costs like debris removal, fire department charges"
+    },
+    {
+      "fieldName": "Premiums with Tax Rates",
+      "fieldType": "number",
+      "fieldDescription": "Total premium including insurance tax (German: 'Prämien mit Steuersätzen'). Gross premium amount including applicable insurance tax rates"
+    },
+    {
+      "fieldName": "Base",
+      "fieldType": "number",
+      "fieldDescription": "Base premium amount (German: 'Basis'). Initial premium before application of factors and adjustments"
+    },
+    {
+      "fieldName": "Sum Factor",
+      "fieldType": "number",
+      "fieldDescription": "Multiplier for sum calculation (German: 'Summenfaktor'). Factor used to adjust insurance sum based on current values"
+    },
+    {
+      "fieldName": "Premium Factor",
+      "fieldType": "number",
+      "fieldDescription": "Premium calculation multiplier (German: 'Prämienfaktor'). Factor used to adjust base premium based on risk assessment"
+    },
+    {
+      "fieldName": "Deductibles",
+      "fieldType": "table",
+      "fieldDescription": "Table to capture multiple deductibles for different risk types",
+      "columns": [
+        {
+          "columnName": "Risk_Type",
+          "valueType": "text",
+          "columnDescription": "Type of risk coverage (German: Risikoart)"
+        },
+        {
+          "columnName": "Amount",
+          "valueType": "number",
+          "columnDescription": "Deductible amount in EUR (German: Selbstbehalt)"
+        }
+      ]
+    }
+  ],
+  "modelDescription": "A specialized document stream for processing German Sparte (Line of Business) Building insurance policies (Sparte Gebäude). This stream is designed to handle comprehensive building insurance documentation, capturing all aspects of property coverage, risk assessment, and financial terms. The document type specifically processes policies related to building insurance in the German market, standardizing extracted data while maintaining references to original German terminology. Key features include:\n\n1. Building-specific coverage details including fire, water damage, and storm protection\n2. Property valuation and premium calculation mechanisms\n3. Detailed risk assessment and coverage specifications\n4. Complete policyholder and property information\n5. Premium and payment calculations including tax considerations\n\nThe stream handles both residential and commercial building policies, capturing specific German insurance requirements and regulations while providing standardized English output format. It maintains the accuracy of technical insurance terms while ensuring accessibility of information across language barriers.",
+  "inputSettings": {
+    "language": "nl",
+    "numberFormat": "auto",
+    "dateFormat": "auto",
+    "currencyFormat": "auto",
+    "documentLayout": "auto",
+    "documentLength": "auto",
+    "sourceQuality": "auto",
+    "contentType": "auto",
+    "handwrittenText": "auto",
+    "_id": "6759425de4ae28776e1f00c5"
+  },
+  "outputVersion": "v2"
+}

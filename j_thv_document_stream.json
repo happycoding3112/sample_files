@@ -1,0 +1,335 @@
+{
+  "name": "german_thv_document_stream",
+  "fields": [
+    {
+      "fieldName": "Makler / Broker",
+      "fieldType": "text",
+      "fieldDescription": "An intermediary who arranges insurance contracts between insurers and clients."
+    },
+    {
+      "fieldName": "Policen_ID / Policy Id",
+      "fieldType": "text",
+      "fieldDescription": "A unique identifier for an insurance policy."
+    },
+    {
+      "fieldName": "Version",
+      "fieldType": "text",
+      "fieldDescription": "The version number of a document or policy."
+    },
+    {
+      "fieldName": "Rahmenvertrag_ID",
+      "fieldType": "text",
+      "fieldDescription": "A unique identifier for a framework agreement."
+    },
+    {
+      "fieldName": "Ablaufdatum / Expiry Date",
+      "fieldType": "text",
+      "fieldDescription": "The date on which an insurance policy or contract expires."
+    },
+    {
+      "fieldName": "VN Name / Policyholder Name",
+      "fieldType": "text",
+      "fieldDescription": "The name of the person or entity that holds the insurance policy."
+    },
+    {
+      "fieldName": "VN Str / Policyholder Street",
+      "fieldType": "text",
+      "fieldDescription": "The street address of the policyholder."
+    },
+    {
+      "fieldName": "VN PLZ / Policyholder Postal Code",
+      "fieldType": "text",
+      "fieldDescription": "The postal code of the policyholder's address."
+    },
+    {
+      "fieldName": "VN Ort / Policyholder City",
+      "fieldType": "text",
+      "fieldDescription": "The city where the policyholder resides."
+    },
+    {
+      "fieldName": "Versicherer / Insurer",
+      "fieldType": "text",
+      "fieldDescription": "The company providing the insurance coverage."
+    },
+    {
+      "fieldName": "gültig ab / Valid From",
+      "fieldType": "text",
+      "fieldDescription": "The date from which an insurance policy is effective."
+    },
+    {
+      "fieldName": "Änderungsgrund / Reason for Change",
+      "fieldType": "text",
+      "fieldDescription": "The reason for any changes made to a policy or contract."
+    },
+    {
+      "fieldName": "AVB / General Insurance Conditions",
+      "fieldType": "text",
+      "fieldDescription": "Terms and conditions that apply to an insurance contract."
+    },
+    {
+      "fieldName": "AVB Stand",
+      "fieldType": "text",
+      "fieldDescription": "The current version or status of the general insurance conditions."
+    },
+    {
+      "fieldName": "BB",
+      "fieldType": "text",
+      "fieldDescription": "Typically refers to special conditions or clauses in a contract (exact meaning can vary)."
+    },
+    {
+      "fieldName": "BB_Stand",
+      "fieldType": "text",
+      "fieldDescription": "Current version or status of special conditions in a contract (exact meaning can vary)."
+    },
+    {
+      "fieldName": "Ausschluss / Exclusion",
+      "fieldType": "text",
+      "fieldDescription": "Specific risks or circumstances not covered by an insurance policy."
+    },
+    {
+      "fieldName": "Währung / Currency",
+      "fieldType": "text",
+      "fieldDescription": "The currency in which payments are made under the policy."
+    },
+    {
+      "fieldName": "SB (Selbstbeteiligung) / Deductible (Self-participation)",
+      "fieldType": "table",
+      "fieldDescription": "Details about deductible amounts, including minimum and maximum values.",
+      "columns": [
+        {
+          "columnName": "SB_min",
+          "valueType": "number",
+          "columnDescription": "Minimum deductible amount."
+        },
+        {
+          "columnName": "SB_max",
+          "valueType": "number",
+          "columnDescription": "Maximum deductible amount."
+        }
+      ]
+    },
+    {
+      "fieldName": "Zahlweise",
+      "fieldType": "text",
+      "fieldDescription": "Payment method, indicating how premiums are paid (e.g., monthly, annually)."
+    },
+    {
+      "fieldName": "Einmalprämie_Brutto",
+      "fieldType": "number",
+      "fieldDescription": "A one-time gross premium payment."
+    },
+    {
+      "fieldName": "Brutto_gem_zahlweise",
+      "fieldType": "number",
+      "fieldDescription": "Gross payment according to payment method."
+    },
+    {
+      "fieldName": "Netto_gem_Zahlweise",
+      "fieldType": "number",
+      "fieldDescription": "Net payment according to payment method."
+    },
+    {
+      "fieldName": "JNP",
+      "fieldType": "number",
+      "fieldDescription": "Annual premium."
+    },
+    {
+      "fieldName": "BJP",
+      "fieldType": "number",
+      "fieldDescription": "Base annual premium."
+    },
+    {
+      "fieldName": "Min_Prämie",
+      "fieldType": "number",
+      "fieldDescription": "Minimum premium."
+    },
+    {
+      "fieldName": "Deckung / Coverage",
+      "fieldType": "text",
+      "fieldDescription": "Details about the coverage provided under the policy."
+    },
+    {
+      "fieldName": "Wagnis / Risk",
+      "fieldType": "text",
+      "fieldDescription": "Details about the risk factors involved in the policy."
+    },
+    {
+      "fieldName": "Prämienfaktor / Premium Factor",
+      "fieldType": "number",
+      "fieldDescription": "Multiplier used in premium calculation."
+    },
+    {
+      "fieldName": "Höchstentschädigung / Maximum Compensation",
+      "fieldType": "number",
+      "fieldDescription": "The maximum amount payable under the policy."
+    },
+    {
+      "fieldName": "Anzahl_versicherte_Personen / Number of Insured Persons",
+      "fieldType": "number",
+      "fieldDescription": "Number of people covered by the policy."
+    },
+    {
+      "fieldName": "Produkt / Product",
+      "fieldType": "text",
+      "fieldDescription": "The product or service associated with the policy."
+    },
+    {
+      "fieldName": "Umsatz_ohne_USA / Revenue Excluding USA",
+      "fieldType": "number",
+      "fieldDescription": "Revenue generated outside the USA."
+    },
+    {
+      "fieldName": "Umsatz_USA / Revenue from USA",
+      "fieldType": "number",
+      "fieldDescription": "Revenue generated within the USA."
+    },
+    {
+      "fieldName": "Mietwert / Rental Value",
+      "fieldType": "number",
+      "fieldDescription": "Rental value of the insured property."
+    },
+    {
+      "fieldName": "Betriebsart / Business Type",
+      "fieldType": "text",
+      "fieldDescription": "Type of operation or business covered under the policy."
+    },
+    {
+      "fieldName": "DS_Vorsorge / Preventive Coverage",
+      "fieldType": "text",
+      "fieldDescription": "Details about preventive care or coverage."
+    },
+    {
+      "fieldName": "Versicherungssumme",
+      "fieldType": "number",
+      "fieldDescription": "Versicherungssumme: Insurance sum/coverage amount"
+    },
+    {
+      "fieldName": "Mitversichert",
+      "fieldType": "text",
+      "fieldDescription": "Mitversichert: Co-insured/included in coverage"
+    },
+    {
+      "fieldName": "beschäftigte",
+      "fieldType": "number",
+      "fieldDescription": "beschäftigte: Employees"
+    },
+    {
+      "fieldName": "Tier_Art",
+      "fieldType": "text",
+      "fieldDescription": "Type of animal."
+    },
+    {
+      "fieldName": "Anzahl_Hunde",
+      "fieldType": "number",
+      "fieldDescription": "Number of dogs insured, with a range from 1 to 15."
+    },
+    {
+      "fieldName": "Reinrassig",
+      "fieldType": "boolean",
+      "fieldDescription": "Indicates whether the animal is purebred."
+    },
+    {
+      "fieldName": "Hunderasse",
+      "fieldType": "text",
+      "fieldDescription": "Dog breed."
+    },
+    {
+      "fieldName": "Rufname",
+      "fieldType": "text",
+      "fieldDescription": "Call name or nickname of the animal."
+    },
+    {
+      "fieldName": "Tier_Alter",
+      "fieldType": "number",
+      "fieldDescription": "Age of the animal."
+    },
+    {
+      "fieldName": "Alter_VN",
+      "fieldType": "number",
+      "fieldDescription": "Age of the policyholder (Versicherungsnehmer)."
+    },
+    {
+      "fieldName": "Tier_KNZ",
+      "fieldType": "text",
+      "fieldDescription": "Animal identification number or tag."
+    },
+    {
+      "fieldName": "öffentlicher_Dienst",
+      "fieldType": "boolean",
+      "fieldDescription": "Indicates if the policyholder works in public service."
+    },
+    {
+      "fieldName": "VS_Person",
+      "fieldType": "number",
+      "fieldDescription": "Personal liability coverage amount."
+    },
+    {
+      "fieldName": "VS_Vermögen",
+      "fieldType": "number",
+      "fieldDescription": "Financial liability coverage amount."
+    },
+    {
+      "fieldName": "VS_Mietsach",
+      "fieldType": "number",
+      "fieldDescription": "Liability coverage for rented property damage."
+    },
+    {
+      "fieldName": "Ausfalldeckung",
+      "fieldType": "boolean",
+      "fieldDescription": "Coverage for default, providing protection if a liable party cannot pay damages."
+    },
+    {
+      "fieldName": "Hüten_durch_dritte_Person",
+      "fieldType": "boolean",
+      "fieldDescription": "Indicates if someone else is allowed to care for the animal."
+    },
+    {
+      "fieldName": "Geltungsbereich",
+      "fieldType": "text",
+      "fieldDescription": "Scope of coverage or geographical area where the insurance is valid."
+    },
+    {
+      "fieldName": "Anzahl_Pferde",
+      "fieldType": "number",
+      "fieldDescription": "Number of horses insured, with a range from 1 to 15."
+    },
+    {
+      "fieldName": "Typ",
+      "fieldType": "text",
+      "fieldDescription": "Type or category of horse."
+    },
+    {
+      "fieldName": "Lebensnummer",
+      "fieldType": "text",
+      "fieldDescription": "Life number or unique identification number for horses."
+    },
+    {
+      "fieldName": "Alter",
+      "fieldType": "number",
+      "fieldDescription": "Age of the horse."
+    },
+    {
+      "fieldName": "Fremdreiter",
+      "fieldType": "boolean",
+      "fieldDescription": "Indicates if someone other than the owner rides the horse."
+    },
+    {
+      "fieldName": "Reitbeteiligung",
+      "fieldType": "boolean",
+      "fieldDescription": "Indicates if there are shared riding arrangements."
+    }
+  ],
+  "modelDescription": "This stream processes general J_contract documents, capturing key insurance details including policyholder information, risk factors, premiums, and coverage terms. It is designed for versatile insurance processing while maintaining industry-standard terminology.",
+  "inputSettings": {
+    "language": "nl",
+    "numberFormat": "auto",
+    "dateFormat": "auto",
+    "currencyFormat": "auto",
+    "documentLayout": "auto",
+    "documentLength": "auto",
+    "sourceQuality": "auto",
+    "contentType": "auto",
+    "handwrittenText": "auto"
+  },
+  "outputVersion": "v2"
+}
